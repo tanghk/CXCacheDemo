@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		478267AF1C1679FF00B9CDBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 478267AE1C1679FF00B9CDBD /* main.m */; };
-		478267B21C1679FF00B9CDBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 478267B11C1679FF00B9CDBD /* AppDelegate.m */; };
+		478267B21C1679FF00B9CDBD /* CXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 478267B11C1679FF00B9CDBD /* CXAppDelegate.m */; };
 		478267B51C1679FF00B9CDBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478267B41C1679FF00B9CDBD /* ViewController.m */; };
 		478267B81C1679FF00B9CDBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478267B61C1679FF00B9CDBD /* Main.storyboard */; };
 		478267BA1C1679FF00B9CDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 478267B91C1679FF00B9CDBD /* Assets.xcassets */; };
 		478267BD1C1679FF00B9CDBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 478267BB1C1679FF00B9CDBD /* LaunchScreen.storyboard */; };
 		478267C81C1679FF00B9CDBD /* CXCacheDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 478267C71C1679FF00B9CDBD /* CXCacheDemoTests.m */; };
 		478267D31C1679FF00B9CDBD /* CXCacheDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 478267D21C1679FF00B9CDBD /* CXCacheDemoUITests.m */; };
+		478267E41C16836C00B9CDBD /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 478267E31C16836C00B9CDBD /* libsqlite3.0.tbd */; };
+		478267E71C16839900B9CDBD /* CXCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 478267E61C16839900B9CDBD /* CXCacheManager.m */; };
+		A554DDAFC9DF61B9086BD1F2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA38F35DF511918F4AEE60B6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		037813AB6D17675B5B54392C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		478267AA1C1679FF00B9CDBD /* CXCacheDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXCacheDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		478267AE1C1679FF00B9CDBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		478267B01C1679FF00B9CDBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		478267B11C1679FF00B9CDBD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		478267B01C1679FF00B9CDBD /* CXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXAppDelegate.h; sourceTree = "<group>"; };
+		478267B11C1679FF00B9CDBD /* CXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXAppDelegate.m; sourceTree = "<group>"; };
 		478267B31C1679FF00B9CDBD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		478267B41C1679FF00B9CDBD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		478267B71C1679FF00B9CDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,12 @@
 		478267CE1C1679FF00B9CDBD /* CXCacheDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CXCacheDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		478267D21C1679FF00B9CDBD /* CXCacheDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXCacheDemoUITests.m; sourceTree = "<group>"; };
 		478267D41C1679FF00B9CDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		478267E31C16836C00B9CDBD /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		478267E51C16839900B9CDBD /* CXCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCacheManager.h; sourceTree = "<group>"; };
+		478267E61C16839900B9CDBD /* CXCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXCacheManager.m; sourceTree = "<group>"; };
+		478267E81C1683E600B9CDBD /* CXCacheDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCacheDemo.pch; sourceTree = "<group>"; };
+		6B267524E47B29DDC596CD3A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AA38F35DF511918F4AEE60B6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478267E41C16836C00B9CDBD /* libsqlite3.0.tbd in Frameworks */,
+				A554DDAFC9DF61B9086BD1F2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10F5042E385696F5E039AE90 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B267524E47B29DDC596CD3A /* Pods.debug.xcconfig */,
+				037813AB6D17675B5B54392C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		478267A11C1679FF00B9CDBD = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +106,8 @@
 				478267C61C1679FF00B9CDBD /* CXCacheDemoTests */,
 				478267D11C1679FF00B9CDBD /* CXCacheDemoUITests */,
 				478267AB1C1679FF00B9CDBD /* Products */,
+				10F5042E385696F5E039AE90 /* Pods */,
+				F807A09EE7416336749AC972 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +124,17 @@
 		478267AC1C1679FF00B9CDBD /* CXCacheDemo */ = {
 			isa = PBXGroup;
 			children = (
-				478267B01C1679FF00B9CDBD /* AppDelegate.h */,
-				478267B11C1679FF00B9CDBD /* AppDelegate.m */,
+				478267B01C1679FF00B9CDBD /* CXAppDelegate.h */,
+				478267B11C1679FF00B9CDBD /* CXAppDelegate.m */,
 				478267B31C1679FF00B9CDBD /* ViewController.h */,
 				478267B41C1679FF00B9CDBD /* ViewController.m */,
+				478267E51C16839900B9CDBD /* CXCacheManager.h */,
+				478267E61C16839900B9CDBD /* CXCacheManager.m */,
 				478267B61C1679FF00B9CDBD /* Main.storyboard */,
 				478267B91C1679FF00B9CDBD /* Assets.xcassets */,
 				478267BB1C1679FF00B9CDBD /* LaunchScreen.storyboard */,
 				478267BE1C1679FF00B9CDBD /* Info.plist */,
+				478267E81C1683E600B9CDBD /* CXCacheDemo.pch */,
 				478267AD1C1679FF00B9CDBD /* Supporting Files */,
 			);
 			path = CXCacheDemo;
@@ -140,6 +166,15 @@
 			path = CXCacheDemoUITests;
 			sourceTree = "<group>";
 		};
+		F807A09EE7416336749AC972 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				478267E31C16836C00B9CDBD /* libsqlite3.0.tbd */,
+				AA38F35DF511918F4AEE60B6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 478267D71C1679FF00B9CDBD /* Build configuration list for PBXNativeTarget "CXCacheDemo" */;
 			buildPhases = (
+				6C393C577B30D7EC8415D928 /* Check Pods Manifest.lock */,
 				478267A61C1679FF00B9CDBD /* Sources */,
 				478267A71C1679FF00B9CDBD /* Frameworks */,
 				478267A81C1679FF00B9CDBD /* Resources */,
+				02816EB6C2EC8A92E5F9B662 /* Embed Pods Frameworks */,
+				D12C60D648C01A7A7448070D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +245,7 @@
 				TargetAttributes = {
 					478267A91C1679FF00B9CDBD = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = U445T3DPKY;
 					};
 					478267C21C1679FF00B9CDBD = {
 						CreatedOnToolsVersion = 7.1;
@@ -265,13 +304,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02816EB6C2EC8A92E5F9B662 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C393C577B30D7EC8415D928 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D12C60D648C01A7A7448070D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		478267A61C1679FF00B9CDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478267E71C16839900B9CDBD /* CXCacheManager.m in Sources */,
 				478267B51C1679FF00B9CDBD /* ViewController.m in Sources */,
-				478267B21C1679FF00B9CDBD /* AppDelegate.m in Sources */,
+				478267B21C1679FF00B9CDBD /* CXAppDelegate.m in Sources */,
 				478267AF1C1679FF00B9CDBD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,8 +499,12 @@
 		};
 		478267D81C1679FF00B9CDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B267524E47B29DDC596CD3A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CXCacheDemo/CXCacheDemo.pch;
 				INFOPLIST_FILE = CXCacheDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengxu.CXCacheDemo;
@@ -422,8 +514,12 @@
 		};
 		478267D91C1679FF00B9CDBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 037813AB6D17675B5B54392C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CXCacheDemo/CXCacheDemo.pch;
 				INFOPLIST_FILE = CXCacheDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chengxu.CXCacheDemo;
@@ -498,6 +594,7 @@
 				478267D91C1679FF00B9CDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		478267DA1C1679FF00B9CDBD /* Build configuration list for PBXNativeTarget "CXCacheDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +603,7 @@
 				478267DC1C1679FF00B9CDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		478267DD1C1679FF00B9CDBD /* Build configuration list for PBXNativeTarget "CXCacheDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +612,7 @@
 				478267DF1C1679FF00B9CDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

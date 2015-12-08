@@ -6,13 +6,13 @@
 //  Copyright © 2015年 ChengxuZheng. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "CXAppDelegate.h"
 
-@interface AppDelegate ()
+@interface CXAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation CXAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -1,0 +1,18 @@
+//
+//  CXCacheDemo.pch
+//  CXCacheDemo
+//
+//  Created by ChengxuZheng on 15/12/8.
+//  Copyright © 2015年 ChengxuZheng. All rights reserved.
+//
+
+#ifndef CXCacheDemo_pch
+#define CXCacheDemo_pch
+
+#import <AFNetworking.h>
+#import <FMDB.h>
+#import <JSONKit.h>
+#import <UIImageView+WebCache.h>
+#import <sqlite3.h>
+
+#endif /* CXCacheDemo_pch */
